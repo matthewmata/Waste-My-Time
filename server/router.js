@@ -16,5 +16,9 @@ router
   .delete(controller.toDont.delete)
   .put(controller.toDont.put);
 
+router
+  .route('/toDont/deleteAll')
+  .delete(controller.toDont.deleteAll)
+
 module.exports = router;
   
